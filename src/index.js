@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
-import Hello from './Hello';
-import AdminContent from './AdminContent'
-import './style.css';
+import ReactDOM from 'react-dom'
+import Hello from './components/Hello';
+import AdminContent from './components/AdminContent'
 
 class App extends Component {
     constructor() {
@@ -25,4 +24,4 @@ class App extends Component {
     }
 }
 
-render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
